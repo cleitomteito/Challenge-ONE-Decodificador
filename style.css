@@ -95,6 +95,8 @@ textarea {
 
     background-image: url("boneco.png");
     background-repeat: no-repeat;
+
+    text-align: center;
 }
 
 .encriptar {

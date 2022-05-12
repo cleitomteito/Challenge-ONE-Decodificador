@@ -11,30 +11,29 @@
 <body>
     <nav>
         <div id="alura">
-            <a href="https://www.alura.com.br/">
+            <a target="_blanck" href="https://www.alura.com.br/">
                 <img src="alura_logo.png" alt="logo da Alura">
             </a>
         </div>
     </nav>
 
     <div id="entrada">
-        <textarea class="input-texto" id="input-texto" cols="36" rows="12" autofocus placeholder="Digite seu texto aqui"></textarea>
+        <textarea class="input-texto" id="textInput" cols="36" rows="12" autofocus placeholder="Digite seu texto aqui"></textarea>
         <img id="infor" src="icon_info.png" alt="imagem ilustrativa">
         <p id="parag">Apenas letras minúsculas.</p>
-        <button class="encriptar">
+        <button class="encriptar" onclick="encrypt()">
             Criptografar
         </button>
-        <button class="desencriptar">
+        <button class="desencriptar" onclick="decrypt()">
             Descriptografar
         </button>
     </div>
     <div id="saida">
-        <!--<img id="img1" src="boneco.png" alt="icone de info">-->
         <textarea class="output-text" id="output-text" cols="24" rows="7" placeholder="Nenhuma mensagem encontrada"></textarea>
         <p>
             Digite um texto que você deseja encriptar ou decriptografar.
         </p>
-        <button class="copiar" id="copy-button">
+        <button class="copiar" id="copy-button" onclick="copy()">
             Copiar
         </button>
     </div>
@@ -44,6 +43,6 @@
             <strong>Desenvolvido por:</strong> Cleitom Pereira
         </footer>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
