@@ -6,7 +6,7 @@ body {
     position: relative;
     width: 1440px;
     height: 1024px;
-
+    margin: 0;
     background: #F3F5FC;
 }
 
@@ -52,7 +52,7 @@ textarea {
     
     width: 252px;
     height: 18px;
-    margin-left: 240px;
+    margin-left: 230px;
     margin-top: 803px;
     display: flex;
     flex-direction: row;
@@ -187,12 +187,34 @@ textarea {
     flex-grow: 1;
 }
 
+h2 {
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: #343A40;
+
+    position: absolute;
+    text-align: center;
+    top: 579px;
+    left: 32px;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
 
 p {
     position: absolute;
     width: 336px;
     height: 48px;
-    margin-top: 693px;
+    margin-top: 669px;
     left: 32px;
 
     font-family: 'Inter';
@@ -213,11 +235,16 @@ p {
 
 footer {
     position: absolute;
-    top: 1000px;
+    top: 1024px;
     color: #FFFFFF;
     background-color: #0A3871;
     border-style: groove;
-    text-align: center;
+    text-align: left;
     width: 100%;
+}
+
+i {
+    color: #FFFFFF;
+    margin-left: 20px;
 }
 

@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="style.css">
     <title>Decodificador</title>
 </head>
 <body>
+
+            <!-- Logo clicável da Alura -->
+
     <nav>
         <div id="alura">
             <a target="_blanck" href="https://www.alura.com.br/">
@@ -17,30 +21,44 @@
         </div>
     </nav>
 
+            <!-- Dados de entrada -->
+
     <div id="entrada">
-        <textarea class="input-texto" id="textInput" cols="36" rows="12" autofocus placeholder="Digite seu texto aqui"></textarea>
-        <img id="infor" src="icon_info.png" alt="imagem ilustrativa">
-        <p id="parag">Apenas letras minúsculas.</p>
-        <button class="encriptar" onclick="encrypt()">
+        <textarea class="input-texto" id="textInput" cols="36" rows="12" autofocus placeholder="Digite seu texto aqui"></textarea> <!-- caixa de texto para inserção da mensagem a ser encriptada -->
+        <img id="infor" src="icon_info.png" alt="imagem ilustrativa">   <!-- icone que informa o usuário de digitar apenas letras minúsculas -->
+        <p id="parag">Apenas letras minúsculas.</p>         
+        <button class="encriptar" onclick="encrypt()">      <!-- mostra o botão encriptar --> 
             Criptografar
         </button>
-        <button class="desencriptar" onclick="decrypt()">
+        <button class="desencriptar" onclick="decrypt()">    <!-- mostra o botão descriptografar -->
             Descriptografar
         </button>
     </div>
+
+            <!-- Dados de saída -->   
+
     <div id="saida">
-        <textarea class="output-text" id="output-text" cols="24" rows="7" placeholder="Nenhuma mensagem encontrada"></textarea>
+        <textarea class="output-text" id="output-text" cols="24" rows="7"></textarea> <!-- caixa de texto que mostra o resultado da mensagem encriptada -->
+        <h2 class="mensagem">Nenhuma mensagem encontrada</i></h2>
         <p>
             Digite um texto que você deseja encriptar ou decriptografar.
         </p>
-        <button class="copiar" id="copy-button" onclick="copy()">
+        <button class="copiar" id="copy-button" onclick="copy()"> <!-- mostra o botão copiar -->
             Copiar
         </button>
     </div>
 
+            <!-- Mostra o rodapé com informações do desenvolvedor -->
+
     <div>
         <footer>
             <strong>Desenvolvido por:</strong> Cleitom Pereira
+            <a target="_blanck" href="https://github.com/cleitomteito">
+                <i class="fa-brands fa-github"></i>     <!--icone do GitHub-->
+            </a>
+            <a target="_blanck" href="https://www.linkedin.com/in/cleitom-pereira-da-silva-a24171b2/">
+                <i class="fa-brands fa-linkedin"></i>   <!--icone do LinkedIn-->
+            </a>
         </footer>
     </div>
     <script src="script.js"></script>

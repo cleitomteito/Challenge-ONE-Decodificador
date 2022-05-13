@@ -1,6 +1,9 @@
 const apaga = document.querySelector(".output-text");
+const mensagem = document.querySelector(".mensagem");
 
-function encrypt() {
+    //função de encriptação
+
+function encrypt() {    
 
     var text = document.getElementById("textInput").value.toLowerCase();
     var encryptedText = text.replace(/e/igm,"enter");
@@ -10,10 +13,13 @@ function encrypt() {
     var encryptedText = encryptedText.replace(/u/igm,"ufat");
 
     document.getElementById("output-text").innerHTML = encryptedText;
-    apaga.style.backgroundImage='none';
+    apaga.style.backgroundImage='none'; //apaga a imagem quando o texto encriptado/desencriptado aparece
+    mensagem.style.display='none';      //apaga a mensagem quando o texto encriptado/desencriptado aparece
 }
 
-function decrypt() {
+    //função de desencriptação
+
+function decrypt() {     
 
     var text = document.getElementById("textInput").value.toLowerCase();
     var encryptedText = text.replace(/enter/igm,"e");
@@ -24,12 +30,15 @@ function decrypt() {
 
     document.getElementById("output-text").innerHTML = encryptedText;
     apaga.style.backgroundImage='none';
-    
+    mensagem.style.display='none';
 }
+
+    //função copiar
+
 function copy() {
 
     var copiedtext = document.getElementById("output-text");
     copiedtext.select();
     navigator.clipboard.writeText(copiedtext.value);
-    document.location.reload(true);
+    document.location.reload(true);     //recarrega após o clique no botão copiar
 }
